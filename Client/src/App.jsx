@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect,useState } from "react";
+import {useEffect,useState } from "react";
 import UserProblem from "./UserProblem";
 
 import HospitalList from "./HospitalList";
@@ -7,7 +7,7 @@ import HospitalList from "./HospitalList";
 function App(){
  
     const [hospital,sethospital]=useState([]);
-    const [position, setPosition] = useState({ latitude: null, longitude: null });
+    const [position,setPosition] = useState({ latitude: null, longitude: null });
     const updatehospital = (data) => {
       sethospital(data);
     };
