@@ -33,7 +33,7 @@ function UserProblem({ updatehospital }) {
   return (
     <nav className="navbar navbar-light bg-light justify-content-between">
       <a className="navbar-brand">Hospital Suggestion System</a>
-      <form className="form-inline" style={{ display: "flex" }}>
+      <form onSubmit={e => { e.preventDefault(); }} className="form-inline" style={{ display: "flex" }}>
         <input className="form-control mr-sm-2" type="text" placeholder="Enter your Problem" aria-label="Search" name="problem" value={formData.problem} onChange={handleChange} />
         <button className="btn btn-outline-success my-2 my-sm-0" type="button" onClick={handleClick}>Search</button>
       </form>
